@@ -69,3 +69,30 @@ Only one valid answer exists.
 `};`
 <br/>
 <br/>
+
+## Explanation:
+
+I've built a function called `twoSum` that takes in an array of numbers (`nums`) and a target number. The purpose of this function is to find a pair of numbers in the array that add up to the target and return their indices in an array. If no such pair is found, it returns `[-1, -1]`.
+<br/>
+
+Inside the function, an empty object called `numsObject` is initialized.
+<br/>
+
+A `for` loop is used to iterate through each element in the `nums` array. Within the loop, the current element is assigned to a variable `n`, and the difference between the target and `n` is calculated and assigned to a variable `compliment`.
+<br/>
+
+An `if` statement checks if the `numsObject` object has a property with the value of `compliment`. If such a property exists, it means that a pair of numbers that add up to the target has been found.
+<br/>
+
+In this case, the function returns an array containing the current index ( `i` ) and the index of the compliment in the `numsObject` object.
+<br/>
+
+If the compliment property does not exist, it means that the current number has not been encountered before. In that case, the current number (`n`) is added as a property to the `numsObject` object, with the value of the current index (`i`).
+<br/>
+
+After the loop finishes, if no pair of numbers that add up to the target is found, the function returns `[-1, -1]`.
+<br/>
+
+In summary, this function searches for a pair of numbers in the input array that add up to the target. It uses an object to store previously encountered numbers and their indices. The function iterates through the array, checking if the compliment of each number exists in the object. If a pair is found, their indices are returned. If no pair is found, `[-1, -1]` is returned.
+<br/>
+<br/>

@@ -106,3 +106,36 @@ An island is surrounded by water and is formed by connecting adjacent lands hori
 `};`
 <br/>
 <br/>
+
+## Explanation:
+
+I've defined two functions: `numIslands` and `dfs`. 
+<br/>
+
+The `numIslands` function takes a grid as input and returns the number of islands present in the grid. It initializes a variable `count` to 0.
+<br/>
+
+Inside the function, there is a nested loop that iterates over each cell in the grid. If the current cell has a value of '1', indicating it is part of an island, the `count` is incremented and the `dfs` function is called with the current grid and the indices of the current cell.
+<br/>
+
+The `dfs` function is a recursive function that performs a depth-first search on the grid. It takes the grid, row index, and column index as input.
+<br/>
+
+Within the `dfs` function, there is an initial check to see if the current row or column indices are out of bounds of the grid. If they are, the function returns.
+<br/>
+
+Next, the value of the current cell is retrieved from the grid.
+<br/>
+
+If the value is '1', indicating an unvisited cell that is part of an island, the value of the cell is changed to '#' to mark it as visited. Then, the `dfs` function is called recursively for the adjacent cells: one cell below, one cell above, one cell to the right, and one cell to the left.
+<br/>
+
+This recursive exploration continues until all connected cells of the current island are visited.
+<br/>
+
+After the DFS traversal is complete, the `numIslands` function returns the final count of islands.
+<br/>
+
+In summary, I've utilized a depth-first search algorithm to traverse the grid and count the number of islands. The `numIslands` function iterates through each cell, marking visited cells and exploring adjacent cells using the `dfs` function. The `dfs` function recursively explores connected cells until all islands are visited. The final count of islands is returned as the output of the `numIslands` function.
+<br/>
+<br/>
