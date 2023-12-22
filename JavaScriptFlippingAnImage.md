@@ -1,7 +1,7 @@
-# JavaScript Flipping An Image
+# JavaScript Flipping an Image
+<br/>
 
-## Challenge:
-
+## Challenge
 Given an `n x n` binary matrix `image`, flip the image horizontally, then invert it, and return the resulting image.
 
 To flip an image horizontally means that each row of the image is reversed.
@@ -14,56 +14,56 @@ To invert an image means that each `0` is replaced by `1`, and each `1` is repla
 
 * For example, inverting `[0,1,1]` results in `[1,0,0]`.
 
-### 1<sup>st</sup> Example:
-
-`Input: image = [[1,1,0],[1,0,1],[0,0,0]]`
-<br/>
-`Output: [[1,0,0],[0,1,0],[1,1,1]]`
-<br/>
-`Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].`
-<br/>
-`Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]`
-
-### 2<sup>nd</sup> Example:
-
-`Input: image = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]`
-<br/>
-`Output: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]`
-<br/>
-`Explanation: First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]].`
-<br/>
-`Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]`
-
-### Constraints:
-
-`n == image.length`
-<br/>
-`n == image[i].length`
-<br/>
-`1 <= n <= 20`
-<br/>
-`images[i][j]` is either `0` or `1`.
-
-## Solution:
-
-`const flipAndInvertImage = (image) => {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`for(let row in image) {`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`image[row] = image[row].reverse();`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`image[row] = image[row].map(x=>1-x);`
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}`
-<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`return image;`
-<br/>
-`};`
-<br/>
 <br/>
 
-## Explanation:
+### 1<sup>st</sup> Example
+
+```JavaScript
+Input: image = [[1,1,0],[1,0,1],[0,0,0]]
+Output: [[1,0,0],[0,1,0],[1,1,1]]
+Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]]
+             Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]
+```
+
+### 2<sup>nd</sup> Example
+
+```JavaScript
+Input: image = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]
+Output: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+Explanation: First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]]
+             Then, invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+```
+
+<br/>
+
+### Constraints
+
+```JavaScript
+n == image.length
+n == image[i].length
+1 <= n <= 20
+```
+
+- `images[i][j]` is either `0` or `1`.
+
+<br/>
+
+## Solution
+
+```JavaScript
+const flipAndInvertImage = (image) => {
+    for(let row in image) {
+        image[row] = image[row].reverse();
+        image[row] = image[row].map(x=>1-x);
+    }
+
+    return image;
+};
+```
+
+<br/>
+
+## Explanation
 
 I've created a function called `flipAndInvertImage` that takes an image as input and returns the modified image. The purpose of this function is to flip the image horizontally and invert the colors of each pixel.
 <br/>
