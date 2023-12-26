@@ -26,13 +26,11 @@ Output: [[1,4],[2,5],[3,6]]
 
 ### Constraints
 
-```JavaScript
-m == matrix.length
-n == matrix[i].length
-1 <= m, n <= 1000
-1 <= m * n <= 10⁵
--10⁹ <= matrix[i][j] <= 10⁹
-```
+- `m == matrix.length`
+- `n == matrix[i].length`
+- `1 <= m, n <= 1000`
+- `1 <= m * n <= 10⁵`
+- `-10⁹ <= matrix[i][j] <= 10⁹`
 
 <br/>
 
@@ -90,3 +88,22 @@ Finally, the `result` array containing the transposed matrix is returned as the 
 In summary, this function transposes a given matrix by swapping the rows and columns. It achieves this by iterating over the columns and rows of the input matrix and constructing a new array representing the transposed matrix. The resulting transposed matrix is then returned as the output of the function.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Flipping an Image)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Sort Array by Parity)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Array Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptFlippingAnImage.md
+[Previous]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptSortArrayByParity.md
+[More]: https://github.com/Superklok/JavaScriptArrays
+[Return]: https://github.com/Superklok/LearnJavaScript

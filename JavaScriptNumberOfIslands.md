@@ -36,12 +36,9 @@ Output: 3
 
 ### Constraints
 
-```JavaScript
-m == grid.length
-n == grid[i].length
-1 <= m, n <= 300
-```
-
+- `m == grid.length`
+- `n == grid[i].length`
+- `1 <= m, n <= 300`
 - `grid[i][j]` is `'0'` or `'1'`.
 
 <br/>
@@ -115,3 +112,22 @@ After the DFS traversal is complete, the `numIslands` function returns the final
 In summary, I've utilized a depth-first search algorithm to traverse the grid and count the number of islands. The `numIslands` function iterates through each cell, marking visited cells and exploring adjacent cells using the `dfs` function. The `dfs` function recursively explores connected cells until all islands are visited. The final count of islands is returned as the output of the `numIslands` function.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Sort Array by Parity)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Two Sum)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Array Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptSortArrayByParity.md
+[Previous]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptTwoSum.md
+[More]: https://github.com/Superklok/JavaScriptArrays
+[Return]: https://github.com/Superklok/LearnJavaScript

@@ -36,12 +36,9 @@ Output: [0,1]
 
 ### Constraints
 
-```JavaScript
-2 <= nums.length <= 10⁴
--10⁹ <= nums[i] <= 10⁹
--10⁹ <= target <= 10⁹
-```
-
+- `2 <= nums.length <= 10⁴`
+- `-10⁹ <= nums[i] <= 10⁹`
+- `-10⁹ <= target <= 10⁹`
 - Only one valid answer exists.
 
 <br/>
@@ -95,3 +92,22 @@ After the loop finishes, if no pair of numbers that add up to the target is foun
 In summary, this function searches for a pair of numbers in the input array that add up to the target. It uses an object to store previously encountered numbers and their indices. The function iterates through the array, checking if the compliment of each number exists in the object. If a pair is found, their indices are returned. If no pair is found, `[-1, -1]` is returned.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Number of Islands)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Longest Common Prefix)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Array Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptNumberOfIslands.md
+[Previous]: https://github.com/Superklok/JavaScriptStrings/blob/main/JavaScriptLongestCommonPrefix.md
+[More]: https://github.com/Superklok/JavaScriptArrays
+[Return]: https://github.com/Superklok/LearnJavaScript

@@ -28,10 +28,8 @@ Output: [0]
 
 ### Constraints
 
-```JavaScript
-1 <= nums.length <= 5000
-0 <= nums[i] <= 5000
-```
+- `1 <= nums.length <= 5000`
+- `0 <= nums[i] <= 5000`
 
 <br/>
 
@@ -77,3 +75,22 @@ Once the loop finishes, the modified array is returned as the output of the func
 In summary, this function rearranges the elements of the input array such that all even numbers come before odd numbers, while preserving the relative order of even and odd numbers within their respective groups.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Transpose Matrix)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Number of Islands)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Array Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptTransposeMatrix.md
+[Previous]: https://github.com/Superklok/JavaScriptArrays/blob/main/JavaScriptNumberOfIslands.md
+[More]: https://github.com/Superklok/JavaScriptArrays
+[Return]: https://github.com/Superklok/LearnJavaScript
