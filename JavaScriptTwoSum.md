@@ -49,7 +49,7 @@ Output: [0,1]
 const twoSum = (nums, target) => {
     let numsObject = {};
 
-    for(let i = 0; i < nums.length; i++) {
+    for (let i = 0; i < nums.length; i++) {
         let n          = nums[i],
             compliment = target-n;
 
@@ -60,7 +60,7 @@ const twoSum = (nums, target) => {
         numsObject[n] = i;
     }
 
-    return [-1,-1];
+    return [-1, -1];
 };
 ```
 
@@ -80,7 +80,7 @@ A `for` loop is used to iterate through each element in the `nums` array. Within
 An `if` statement checks if the `numsObject` object has a property with the value of `compliment`. If such a property exists, it means that a pair of numbers that add up to the target has been found.
 <br/>
 
-In this case, the function returns an array containing the current index ( `i` ) and the index of the compliment in the `numsObject` object.
+In this case, the function returns an array containing the current index (`i`) and the index of the compliment in the `numsObject` object.
 <br/>
 
 If the compliment property does not exist, it means that the current number has not been encountered before. In that case, the current number (`n`) is added as a property to the `numsObject` object, with the value of the current index (`i`).

@@ -40,10 +40,10 @@ Output: [[1,4],[2,5],[3,6]]
 const transpose = (A) => {
     let result = [];
 
-    for (let i= 0; i<A[0].length; i++) {
+    for (let i = 0; i < A[0].length; i++) {
         let currentColumn = [];
 
-        for (let j=0; j<A.length; j++) {
+        for (let j = 0; j < A.length; j++) {
             currentColumn.push(A[j][i]);
         }
 

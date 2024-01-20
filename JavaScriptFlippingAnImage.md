@@ -21,8 +21,10 @@ To invert an image means that each `0` is replaced by `1`, and each `1` is repla
 ```JavaScript
 Input: image = [[1,1,0],[1,0,1],[0,0,0]]
 Output: [[1,0,0],[0,1,0],[1,1,1]]
-Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]]
-             Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]
+Explanation: First reverse each row:
+             [[0,1,1],[1,0,1],[0,0,0]]
+             Then, invert the image:
+             [[1,0,0],[0,1,0],[1,1,1]]
 ```
 
 ### 2<sup>nd</sup> Example
@@ -30,8 +32,10 @@ Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]]
 ```JavaScript
 Input: image = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]
 Output: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
-Explanation: First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]]
-             Then, invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+Explanation: First reverse each row:
+             [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]]
+             Then, invert the image:
+             [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 ```
 
 <br/>
@@ -49,9 +53,9 @@ Explanation: First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]]
 
 ```JavaScript
 const flipAndInvertImage = (image) => {
-    for(let row in image) {
+    for (let row in image) {
         image[row] = image[row].reverse();
-        image[row] = image[row].map(x=>1-x);
+        image[row] = image[row].map(x => 1 - x);
     }
 
     return image;
